@@ -13,7 +13,7 @@ unzip -d data/raw/ data/raw/fma_small.zip
 # Roadmap
 
 
- 1. [ ] Signal pipeline — Audio loading (mono, 11 kHz resampling), STFT spectrogram from scratch (numpy), spectro CLI command, unit tests on synthetic signals
+ 1. [ ] Signal pipeline — Audio loading (mono, 11 kHz resampling), STFT spectrogram from scratch (numpy)
  2. [ ] Peak detection — Extract the spectral peak "constellation" (local maxima, adaptive threshold, target peak density), constellation overlay visualization validated on synthetic chirp
  3. [ ] Fingerprint hashing — 32-bit hash encoding/decoding (f1 | f2 | Δt bit-packing) with round-trip tests, combinatorial pair generation (anchor + target zone, fan-out tuning)
  4. [ ] Indexing — index CLI command: fingerprint a folder of tracks (FMA dataset) into the SQLite inverted index; report track count, hash count, and indexing time
